@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2D3748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-page {
+    width: 100%;
+    max-width: 420px;
+    background-color: #F6AD55;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    padding: 32px 24px 24px 24px;
+    color: #1A202C;
+}
+
+.login-header h2 {
+    font-size: 2rem;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+.login-header p {
+    margin: 0;
+    color: #2D3748;
+    font-size: 0.95rem;
+}
+
+.login-card {
+    background-color: #FFFFFF;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background-color: #F7FAFC;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #4A5568;
+    box-sizing: border-box;
+}
+
+#login-form input:focus {
+    outline: 2px solid #F6AD55;
+}
+
+.forgot-pass {
+    align-self: flex-end;
+    font-size: 0.85rem;
+    color: #718096;
+    cursor: pointer;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.btn-social {
+    width: 100%;
+    padding: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2D3748;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background-color 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #F7FAFC;
+}
+
+.social-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.google-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.linkedin-icon {
+    width: 22px;
+    height: 22px;
+}
