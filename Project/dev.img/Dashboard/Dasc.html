@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Dasc.css">
+    <title>DevPathway | Dashboard</title>
+</head>
+<body class="home-body">
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>DevPathway</h1>
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#trilha">Trilha</a></li>
+                <li><a href="#">Calendário</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile-area">
+            <span class="user-name">Olá, <span id="display-username">Usuário</span></span>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <aside class="dash-column left-column">
+            <section class="card profile-card">
+                <div class="profile-header">
+                    <img src="dascimg/logoDevParhway.jpg.jpg" alt="Logo DevPathway" class="user-avatar-big">
+                    <h2 id="profile-name">Usuário</h2>
+                    <p class="user-title">Desenvolvedor(a)</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <h3>0</h3>
+                        <p>Projetos</p>
+                    </div>
+                    <div class="stat">
+                        <h3>0%</h3>
+                        <p>Cursos</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="card progress-card">
+                <h3>Trilha de Aprendizado</h3>
+                <div class="progress-item">
+                    <label>Fundamentos Web</label>
+                    <div class="progress-bar"><span class="progress-fill"></span></div>
+                </div>
+                <div class="progress-item">
+                    <label>Lógica de Programação</label>
+                    <div class="progress-bar"><span class="progress-fill"></span></div>
+                </div>
+                 <div class="progress-item">
+                    <label>Carreira Tech</label>
+                    <div class="progress-bar"><span class="progress-fill"></span></div>
+                </div>
+            </section>
+        </aside>
+
+        <section class="dash-column center-column">
+            <section class="card">
+                <div class="section-title">
+                    <h2>Meu Dia</h2>
+                    <p>Comece sua jornada</p>
+                </div>
+            </section>
+
+            <article class="card task-card orange-priority">
+                <div class="task-info">
+                    <h4>Bem-vindo ao DevPathway!</h4>
+                    <p>Adicione sua primeira meta de estudos</p>
+                </div>
+            </article>
+
+            <!-- Seção da Trilha de Crescimento -->
+            <section class="card trilha-section-main" id="trilha">
+                <div class="section-title">
+                    <h2>Sua Trilha de Crescimento</h2>
+                    <p>Acompanhe seus módulos de estudo</p>
+                </div>
+                
+                <div class="trilha-grid">
+                    <div class="trilha-card-item">
+                        <h3>Fundamentos Web</h3>
+                        <ul>
+                            <li><input type="checkbox"> HTML5 & Semântica</li>
+                            <li><input type="checkbox"> CSS3 & Layouts</li>
+                            <li><input type="checkbox"> Git e Versionamento</li>
+                        </ul>
+                    </div>
+
+                    <div class="trilha-card-item">
+                        <h3>Lógica & Programação <span class="stack-tag">(JavaScript)</span></h3>
+                        <ul>
+                            <li><input type="checkbox"> Variáveis (let, const)</li>
+                            <li><input type="checkbox"> Arrays e Objetos</li>
+                            <li><input type="checkbox"> Funções e Métodos</li>
+                            <li><input type="checkbox"> Manipulação do DOM</li>
+                        </ul>
+                    </div>
+
+                    <div class="trilha-card-item">
+                        <h3>Carreira Tech & Mercado</h3>
+                        <ul>
+                            <li><input type="checkbox"> Otimização de Currículo</li>
+                            <li><input type="checkbox"> LinkedIn para Recrutadores</li>
+                            <li><input type="checkbox"> Preparação para Entrevistas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card update-feed">
+                 <h3>Calendário</h3>
+                 <div class="calendar-widget">
+                     <div class="calendar-header">
+                         <button class="cal-nav-btn">&lt;</button>
+                         <span class="cal-month-year">Carregando...</span>
+                         <button class="cal-nav-btn">&gt;</button>
+                     </div>
+                     <div class="calendar-grid">
+                     </div>
+                 </div>
+            </section>
+        </section>
+
+        <aside class="dash-column right-column">
+            <section class="card tool-card spotify-card">
+                 <h3>Spotify para Codar</h3>
+                 <div class="tool-content">
+                     <img src="dascimg/logospotify.jpg" alt="Spotify" class="tool-logo">
+                     <div>
+                        <p class="track-title">Playlist de Foco</p>
+                        <p class="artist-name">Selecione uma faixa</p>
+                     </div>
+                 </div>
+                 <button class="btn-tool">Ouvir Agora</button>
+            </section>
+            
+            <section class="card indication-card">
+                <h3>Indicações de Vagas</h3>
+                <div class="indication-item">
+                    <h4>Nenhuma vaga listada</h4>
+                    <p>Complete seu perfil para receber recomendações</p>
+                </div>
+            </section>
+        </aside>
+    </main>
+    <script src="Dasc.js"></script>
+</body>
+</html>
